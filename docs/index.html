@@ -50,6 +50,15 @@
           $("html, body").css("position", "fixed").css("left", "0").css("top", "0")
           $(".switch-btn p").text("状态：不可滑动")
         }
+        $(document).scroll(function() {
+          $(document).scrollTop(0)
+        })
+        $("html").scroll(function() {
+          $("html").scrollTop(0)
+        })
+        $("body").scroll(function() {
+          $("body").scrollTop(0)
+        })
       });
     });
 
