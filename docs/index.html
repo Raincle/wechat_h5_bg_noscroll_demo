@@ -46,6 +46,10 @@
         if (status == "状态：不可滑动") {
           $("html, body").css("position", "relative").css("left", "auto").css("top", "auto")
           $(".switch-btn p").text("状态：可滑动")
+
+          $(document).unbind('scroll')
+          $("html").unbind('scroll')
+          $("body").unbind('scroll')
         } else {
           $("html, body").css("position", "fixed").css("left", "0").css("top", "0")
           $(".switch-btn p").text("状态：不可滑动")
