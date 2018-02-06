@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>微信H5滑动不露出背景测试</title>
+    <script type="text/javascript" href="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
     <div class="switch-btn"><p>可滑动</p></div>
   </body>
   <style media="screen">
+    body, p {
+      margin: 0;
+    }
     body {
       position: fixed;
       width: 100vw;
@@ -33,6 +37,10 @@
     }
   </style>
   <script type="text/javascript">
-
+  $(document).ready(function(){
+    $(".switch-btn").click(function(){
+      console.log("in");
+    });
+  });
   </script>
 </html>
