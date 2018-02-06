@@ -13,7 +13,7 @@
     body, p {
       margin: 0;
     }
-    body {
+    html, body {
       position: fixed;
       width: 100vw;
       height: 100vh;
@@ -43,10 +43,10 @@
       $(".switch-btn").click(function(){
         var status = $(".switch-btn p").text()
         if (status == "可滑动") {
-          $("body").css("position", "relative").css("left", "auto").css("top", "auto")
+          $("html, body").css("position", "relative").css("left", "auto").css("top", "auto")
           $(".switch-btn p").text("不可滑动")
         } else {
-          $("body").css("position", "fixed").css("left", "0").css("top", "0")
+          $("html, body").css("position", "fixed").css("left", "0").css("top", "0")
           $(".switch-btn p").text("可滑动")
         }
       });
