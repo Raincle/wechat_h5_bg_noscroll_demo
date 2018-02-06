@@ -2,9 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>test</title>
+    <title>微信H5滑动不露出背景测试</title>
   </head>
   <body>
-
+    <div class="switch-btn"></div>
   </body>
+  <style media="screen">
+    body {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      top: 0;
+    }
+    .switch-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 40px;
+      background-color: red;
+    }
+  </style>
+  <script type="text/javascript">
+
+  </script>
 </html>
