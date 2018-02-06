@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="switch-btn"><p>可滑动</p></div>
+    <div class="switch-btn"><p>状态：不可滑动</p></div>
   </body>
   <style media="screen">
     body, p {
@@ -43,7 +43,7 @@
     $(document).ready(function(){
       $(".switch-btn").click(function(){
         var status = $(".switch-btn p").text()
-        if (status == "可滑动") {
+        if (status == "状态：不可滑动") {
           $("html, body").css("position", "relative").css("left", "auto").css("top", "auto")
           $(".switch-btn p").text("不可滑动")
         } else {
